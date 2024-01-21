@@ -1,0 +1,162 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    caret-color: transparent;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+#content {
+    max-width: 600px;
+    width: 80%;
+    text-align: left;
+    margin-top: 20px;
+    border: 5px solid aqua; /* Aqua border around the content */
+    padding: 40px; /* Add some padding inside the border */
+    box-shadow: 0 0 20px rgb(0, 128, 128); /* Aqua box shadow */
+}
+
+.title-vilkor {
+    color: aqua;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    color: aqua;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #content {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+
+.back-to-home {
+    background-color: aqua;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px; /* Adjust the margin from the top */
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+.back-to-home:hover {
+    background-color: #00cccc;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .back-to-home {
+        padding: 8px 16px;
+        margin-top: 5px;
+        bottom: -150%; /* Adjust based on your design */
+    }
+}
+
+
+
+
+
+
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+/* Footer Style */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -100px; /* Set negative margin equal to the footer height */
+  }
+  
+  .footer-no-gap {
+    margin-top: 0px;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    line-height: 1.5; /* Adjusted line height for better vertical centering */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0; /* Remove default margin */
+  }
+  
+  footer p a {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  footer p a:hover {
+    opacity: 0.75;
+  }
+  
+  /* Responsive styles */
+  
+  @media only screen and (max-width: 768px) {
+    footer {
+      height: auto;
+      padding: 15px 0;
+    }
+  
+    footer p {
+      font-size: 14px;
+    }
+  }
+  

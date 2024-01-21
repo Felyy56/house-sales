@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/images/fav-icon.png">
 
-    <title>House of Sales | Main</title>
+    <title>House of Sales | Startsida</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 <body>
   <div class="video-background">
     <video autoplay muted loop id="video-bg">
-      <source src="/assets/images/exemple1.mp4" type="video/mp4">
+      <source src="/assets/images/test1.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -44,7 +44,7 @@
       var video = document.getElementById("video-bg");
       if (video) {
         // Set the starting time to 25 seconds
-        video.currentTime = 21;
+        video.currentTime = 0;
       }
     });
   </script>
@@ -63,7 +63,7 @@
   audio.volume = 0.1;
 
   // Set the specific time to start from (in seconds)
-  var startTime = 100;
+  var startTime = 0;
 
   // Set the starting time of the audio
   audio.currentTime = startTime;
@@ -89,7 +89,7 @@
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-z12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
@@ -99,10 +99,10 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                       <li><a href="index.html" class="active">Home</a></li>
-                      <li><a href="404.html">About us</a></li>
-                      <li><a href="404.html">Rules</a></li>
-                      <li><a href="404.html">Contact Us</a></li>
-                      <li><a href="404.html">Join us</a></li>
+                      <li><a href="404.html">Om oss</a></li>
+                      <li><a href="vilkor.html">Användarvillkor</a></li>
+                      <li><a href="contact.html">Kontakta Oss</a></li>
+                      <li><a href="404.html">Gå med</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -233,14 +233,14 @@
     <h1>Welcome to</h1>
     <div class="server-name">House of Sales</div>
     <div class="description">Vi är en community där försäljning, utbildning och höga provisioner är en standard.</div>
-    <a href="#" class="learn-more-btn">Learn more</a>
+    <a href="404.html" class="learn-more-btn">Gå med</a>
   </div>
 
 
 
   <footer>
     <div class="container">
-        <p>Copyright © 2024 Felyy's website, Ltd. All rights reserved. 
+        <p>Copyright © 2024 House of Sales, Ltd. All rights reserved. 
       </div>
     </div>
   </footer>

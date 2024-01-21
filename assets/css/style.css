@@ -292,9 +292,9 @@ Header Style
 }
 
 .header-area .main-nav .nav li a {
+  position: relative;
+  margin-left:10px;
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
   font-weight: bold;
   font-size: 15px;
   height: 40px;
@@ -312,27 +312,7 @@ Header Style
   text-transform: uppercase;
 }
  /* Join Now button */
-.header-area .main-nav .nav li:last-child a {
-  position: relative;
-  left: 500%;
-  background-color: aqua;
-  color: rgb(0, 0, 0); 
-  font-size: 15px;
-  font-weight: bold;
-  text-transform: none;
-  border-radius: 20px;
-  padding: 10px 15px; /* Adjust padding values for top/bottom and left/right */
-  text-decoration: none; /* Remove default link underline */
-  text-transform: uppercase;
 
-  /* Center the text vertically */
-  display: flex;
-  align-items: center;
-
-  /* Additional styles for better visual appearance */
-  margin-right: 10px; /* Adjust the right margin for a gap between links */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
 
 .header-area .main-nav .nav li:last-child a:hover {
   background-color: #333333; /* Darken the background on hover */

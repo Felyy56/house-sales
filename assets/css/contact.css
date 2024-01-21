@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+* {
+    font-family: 'Poppins', sans-serif;
+    caret-color: transparent;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Placera innehållet högst upp på sidan */
+    background-color: rgba(29, 29, 29);
+}
+
+
+
+/* Typeform */
+.form-container {
+    margin-top: 10%;
+    width: 50%;
+    box-shadow: 0 0 20px rgba(0, 225, 255, 0.637);
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .form-container {
+        width: 80%; /* Adjust the width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 90%; /* Further adjust the width for even smaller screens */
+    }
+}
+
+/* Kontakta oss texten */
+.contact-us {
+    position: absolute;
+    text-align: center;
+    margin-top: 2%;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #1481ca, #87CEEB, #87CEEB, #1481ca);
+    animation: pulse 5s infinite;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .contact-us {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Ingen förändring vid start */
+    }
+    50% {
+        transform: scale(1.05); /* Ökande effekt vid 50% av animationen */
+    }
+    100% {
+        transform: scale(1); /* Återgå till ursprunglig storlek vid slutet */
+    }
+}
+
+
+
+/* Tillbaka till hemsidan */
+.back-website {
+    position: relative;
+    top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #1481ca, #87CEEB, #87CEEB, #1481ca);
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .back-website {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Add more media queries as needed for different screen sizes */
+
+
+.back-website:hover {
+    transform: scale(1.05); /* Justera skalfaktorn för att expandera texten */
+}
+
+
+
+
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+
+
+  
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: -100px; /* Set negative margin equal to the footer height */
+  }
+  
+  .footer-no-gap {
+    margin-top: 0px;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p {
+    line-height: 1.5; /* Adjusted line height for better vertical centering */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0; /* Remove default margin */
+  }
+  
+  footer p a {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  footer p a:hover {
+    opacity: 0.75;
+  }
+  
