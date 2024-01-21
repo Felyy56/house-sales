@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav-icon.png">
+
+    <title>House of Sales | Main</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/terms.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+
+    <meta property="og:title" content="House of Sales">
+    <meta property="og:description" content="Vi är en community där försäljning, utbildning och höga provisioner är en standard.">
+    <meta property="og:url" content="https://felyy.se">
+    <meta property="og:type" content="website">
+<!--
+
+
+-->
+  </head>
+
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="video-bg">
+      <source src="/assets/images/exemple1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var video = document.getElementById("video-bg");
+      if (video) {
+        // Set the starting time to 25 seconds
+        video.currentTime = 21;
+      }
+    });
+  </script>
+
+  <!-- ***** Annat ljud än videons om du vill ha ***** -->
+<audio id="myAudio" autoplay muted>
+  <source src="exempl" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // Get the audio element
+  var audio = document.getElementById("myAudio");
+
+  // Set the initial volume (between 0 and 1)
+  audio.volume = 0.1;
+
+  // Set the specific time to start from (in seconds)
+  var startTime = 100;
+
+  // Set the starting time of the audio
+  audio.currentTime = startTime;
+
+  // Unmute the audio after it starts playing
+  audio.addEventListener('playing', function() {
+      audio.muted = false;
+  });
+</script>
+
+  <!-- ***** Preloader Start ***** -->
+  <div class="loading-wrapper" id="loader-wrapper">
+    <div class="loading-inner" id="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>House of Sales</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="index.html" class="active">Home</a></li>
+                      <li><a href="404.html">About us</a></li>
+                      <li><a href="404.html">Rules</a></li>
+                      <li><a href="404.html">Contact Us</a></li>
+                      <li><a href="404.html">Join us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+
+  <div id="terms-overlay" class="wrapper flex_align_justify">
+    <div class="tc_wrap">
+        <div class="tabs_list">
+          <ul>
+            <li data-tc="tab_item_1" class="active">INLEDNING</li>
+            <li data-tc="tab_item_2">ÄNDRINGAR AV VILLKOREN</li>
+            <li data-tc="tab_item_3">MISSBRUK</li>
+            <li data-tc="tab_item_4">KONSEKVENSER VID ÖVERTRÄDELSE</li>
+            <li data-tc="tab_item_5">PRISFÖRÄNDRINGAR AV VÅRA TJÄNSTER</li>
+            <li data-tc="tab_item_6">AVSLÖJANDE AV DINA PERSONUPPGIFTER</li>
+            <li data-tc="tab_item_7">INSAMLING AV DINA PERSONUPPGIFTER</li>
+            <li data-tc="tab_item_8">ANVÄNDNING AV PERSONLIG INFORMATION</li>
+            <li data-tc="tab_item_9">UTLÄMNING AV PERSONLIG INFORMATION</li>
+            <li data-tc="tab_item_10">GDPR INFORMATION</li>
+          </ul>
+        </div>
+        <div class="tabs_content">
+           <div class="tab_head">
+             <h2>Användarvillkor</h2>
+           </div>
+           <div class="tab_body">
+             <div class="tab_item tab_item_1">
+                 <h3>INLEDNING</h3>
+                 <p>Välkommen till Discord-servern "House of Sales", som drivs av Bolagsjuristerna Sverige AB, organisationsnummer 556675-3918. Genom att besöka och använda vår server,hemsida eller någon av våra tjänster så godkänner du följande användarvillkor. Läs noga igenom dessa villkor innan du använder våra tjänster.</p>
+             </div>
+             <div class="tab_item tab_item_2" style="display: none;">
+                 <h3>ÄNDRINGAR AV VILLKOREN</h3>
+               <p>Dessa användarvillkor kan ändras när som helst. Större ändringar kommer att meddelas minst 14 dagar i förväg. Genom att fortsätta använda våra tjänster efter ändringar i användarvillkoren accepterar du de uppdaterade villkoren.
+              </p>
+             </div>
+             <div class="tab_item tab_item_3"  style="display: none;">
+                 <h3>MISSBRUK</h3>
+                 <p>Vi förväntar oss att alla användare respekterar och följer lagar och förordningar. </p>
+
+                  <p>Denial of Service (DoS/DDoS) attacker
+                    Riktade mot oss eller någon annan är strängt förbjudet.
+                  </p>
+                  <p>Säkerhets- och Acceptans Bestämmelser</p>
+                  <p>Försök, framgångsrika eller ej, att skicka ut skräppost/oönskad e-post.
+                    Phishing, skadlig kod eller andra skadliga åtgärder är strängt förbjudet.
+                    Hacking av vår sida eller inspektion för att hitta dolda genvägar för att komma förbi vårt "Acceptera" eller "Neka" pop-up-fönster.
+                    Acceptans av villkoren är förbjudet.
+                    </p>
+             </div>
+             <div class="tab_item tab_item_4"  style="display: none;">
+                 <h3>KONSEKVENSER VID ÖVERTRÄDELSE</h3>
+               <p>Om användaren inte följer dessa villkor kan följande åtgärder vidtas:</p>
+               <p>a. Inte kunna använda våra tjänster:
+
+                Tillfällig eller permanent begränsning av tillgång till våra tjänster.
+               </p>
+               <p>
+                b. Avstängning från våra tjänster:
+                
+                Återkallelse av rättigheter att använda vår server.
+                Vi förbehåller oss rätten att vidta lämpliga åtgärder baserat på överträdelsens allvar och omständigheterna kring överträdelsen.
+                </p>
+             </div>
+             <div class="tab_item tab_item_5"  style="display: none;">
+                 <h3>PRISFÖRÄNDRINGAR AV VÅRA TJÄNSTER</h3>
+               <p>Vi förbehåller oss rätten att när som helst ändra priser för våra tjänster. Eventuella prisjusteringar kommer att meddelas på vår plattform eller via e-post till registrerade användare. Genom att fortsätta använda våra tjänster efter meddelandet om prisändringar godkänner du de nya pris villkoren.</p>
+             </div>
+             <div class="tab_item tab_item_6"  style="display: none;">
+              <h3>AVSLÖJANDE AV DINA PERSONUPPGIFTER</h3>
+            <p>Vi kan avslöja dina ärenden och den information vi har samlat in från dig till lagliga myndigheter om det krävs enligt lag eller vid juridiska förfrågningar.</p>
+          </div>
+          <div class="tab_item tab_item_7"  style="display: none;">
+            <h3>INSAMLING AV DINA PERSONUPPGIFTER</h3>
+         <p>När du använder våra tjänster samlar vi in följande typer av personlig information:</p>
+         <p>Information om din dator, inklusive IP-adress, geografisk plats, webbläsare, typ och -version samt operativsystem.
+          Information om dina besök på och användning av vår webbplats.
+          Information som du anger vid registrering och skapande av profil.
+          Information som du lämnar i kommunikation med oss via e-post eller vår webbplats.
+          </p>
+          <p>För att lämna ut en annan persons personliga information krävs samtycke från den personen.</p>
+        </div>
+        <div class="tab_item tab_item_8"  style="display: none;">
+          <h3>ANVÄNDNING AV PERSONLIG INFORMATION</h3>
+       <p>Vi behandlar din personliga information för följande ändamål:</p>
+       <p>
+        Administrera vår webbplats och verksamhet.
+        Anpassa vår webbplats för att möta dina behov.
+        Möjliggöra användning av våra tjänster.
+        Skicka e-postmeddelanden som du specifikt begärt.
+        Hantera förfrågningar och klagomål.
+        Säkerställa överensstämmelse med användarvillkoren.
+        Övrig användning i enlighet med gällande lagar och bestämmelser.
+        Utlämning av personlig information
+        </p>
+      </div>
+      <div class="tab_item tab_item_9"  style="display: none;">
+        <h3>UTLÄMNING AV PERSONLIG INFORMATION</h3>
+     <p>Till våra anställda och ägare.
+      Enligt lagkrav eller juridiska förfrågningar.
+      Till köparen eller den blivande köparen vid företagsöverlåtelser.
+      </p>
+    </div>
+    <div class="tab_item tab_item_10"  style="display: none;">
+      <h3>GDPR INFORMATION</h3>
+   <p>Vår insamling och hantering av personlig information följer bestämmelserna i General Data Protection Regulation (GDPR). För detaljer om hur vi skyddar och behandlar dina data, vänligen besök GDPR officiella hemsida.</p>
+  </div>
+           </div>
+           <div class="tab_foot flex_align_justify">
+             <button class="decline" id="decline">
+               Decline
+             </button>
+             <button class="agree">
+               Agree
+             </button>
+           </div>
+        </div>
+    </div>
+ </div>
+
+  <div class="welcome-text">
+    <h1>Welcome to</h1>
+    <div class="server-name">House of Sales</div>
+    <div class="description">Vi är en community där försäljning, utbildning och höga provisioner är en standard.</div>
+    <a href="#" class="learn-more-btn">Learn more</a>
+  </div>
+
+
+
+  <footer>
+    <div class="container">
+        <p>Copyright © 2024 Felyy's website, Ltd. All rights reserved. 
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/loader.js"></script>
+
+  </body>
+</html>

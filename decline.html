@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House of Sales | Decline</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="icon" type="image/x-icon" href="/assets/images/fav-icon.png">
+    <style>
+        * {
+    caret-color: transparent;
+  }
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(29, 29, 29);
+            color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+
+        #top-section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(20, 20, 20); /* Dark color for contrast */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #time-info{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #message-container {
+            position: relative;
+            top: -100px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 27px;
+            text-transform: uppercase;
+        }
+
+        #back-button {
+            background-color: aqua;
+            color: rgb(29, 29, 29);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-top: -100px;
+            font-weight: 700;
+            animation: pulse 1s infinite alternate;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1.5);
+            }
+        }
+
+        main {
+            /* Removed flex property */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgb(20, 20, 20); /* Darker color than the background */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-section">
+        <div id="time-info"></div>
+        <div id="ip-info"></div>
+    </div>
+    <main>
+        <div id="message-container">
+            <p>Du behöver acceptera våra användarsvilkor för att kunna använda våran hemsida</p>
+        </div>
+        <a id="back-button" href="index.html">Tillbacka till Hemsidan</a>
+    </main>
+    <footer>
+        <p>Copyright © 2024 Felyy's website, Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        // Get the current time
+        var currentTime = new Date();
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        
+        // Format the time as HH:MM
+        var formattedTime = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
+        
+        // Display the time at the top of the page
+        document.getElementById('time-info').innerHTML = 'Du blev direkterad hit klockan ' + formattedTime;
+    </script>
+</body>
+</html>
